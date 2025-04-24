@@ -6,6 +6,9 @@ To develop a Django application to store and retrieve data from Movies Database 
 
 ## ENTITY RELATIONSHIP DIAGRAM
 
+![web](https://github.com/user-attachments/assets/62153f4c-0903-4cad-846b-f4142b9757c1)
+
+
 
 ## DESIGN STEPS
 
@@ -25,29 +28,32 @@ Execute Django admin and create details for 10 books
 ```python
 admin.py
 from django.contrib import admin
-from .models import Employee,EmployeeAdmin
-admin.site.register(Employee,EmployeeAdmin)
+from .models import Movie,MovieAdmin
+admin.site.register(Movie,MovieAdmin)
+
 
 models.py
 from django.db import models
 from django.contrib import admin
-class Employee (models.Model):
-    eid=models.IntegerField(primary_key=True)
-    name=models.CharField(max_length=100)
-    salary=models.IntegerField()
-    age=models.IntegerField()
-    email=models.EmailField()
- 
-class EmployeeAdmin(admin.ModelAdmin):
-    list_display=('eid','name','salary','age','email')
+class Movie(models.Model):
+    mid=models.IntegerField()
+    mname=models.CharField(max_length=100)
+    collection=models.IntegerField()
+    year=models.IntegerField()
+    rating=models.FloatField()
+
+class MovieAdmin(admin.ModelAdmin):
+    list_display=('mid','mname','collection','year','rating')
+
 ```
 
 
 
 
 ## OUTPUT
-![nikshi](https://github.com/user-attachments/assets/f55e0304-bd90-4a39-8b50-77b3e8380fba)
 
+
+![nikshi](https://github.com/user-attachments/assets/d5af5aa0-bbc0-4388-9efd-e17ac70ff4ac)
 
 
 
