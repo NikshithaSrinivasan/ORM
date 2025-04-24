@@ -44,7 +44,8 @@ class EmployeeAdmin(admin.ModelAdmin):
 
 
 ## OUTPUT
-nik.png
+![nik](https://github.com/user-attachments/assets/288aade4-68f5-442e-82e8-b554de07c7a2)
+
 
 
 ## RESULT
