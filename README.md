@@ -46,7 +46,8 @@ class EmployeeAdmin(admin.ModelAdmin):
 
 
 ## OUTPUT
-![nik](https://github.com/user-attachments/assets/288aade4-68f5-442e-82e8-b554de07c7a2)
+![nikshi](https://github.com/user-attachments/assets/f55e0304-bd90-4a39-8b50-77b3e8380fba)
+
 
 
 
