@@ -53,8 +53,7 @@ class MovieAdmin(admin.ModelAdmin):
 ## OUTPUT
 
 
-![nikshi](https://github.com/user-attachments/assets/d5af5aa0-bbc0-4388-9efd-e17ac70ff4ac)
-
+![alt text](nikshi.png)
 
 
 ## RESULT
