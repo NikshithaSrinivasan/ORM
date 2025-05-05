@@ -1,13 +1,12 @@
 8# Ex02 Django ORM Web Application
-## Date: 24/04/2025
+## Date: 05/05/2025
 
 ## AIM
 To develop a Django application to store and retrieve data from Movies Database using Object Relational Mapping(ORM).
 
 ## ENTITY RELATIONSHIP DIAGRAM
 
-![web](https://github.com/user-attachments/assets/62153f4c-0903-4cad-846b-f4142b9757c1)
-
+![alt text](<WhatsApp Image 2025-05-05 at 22.37.27_a1e01b39.jpg>)
 
 
 ## DESIGN STEPS
@@ -26,24 +25,27 @@ Execute Django admin and create details for 10 books
 
 ## PROGRAM
 ```python
-admin.py
-from django.contrib import admin
-from .models import Movie,MovieAdmin
-admin.site.register(Movie,MovieAdmin)
 
+admin.py
+
+from django.contrib import admin
+from .models import Movie,UserID
+admin.site.register(Movie,UserID)
 
 models.py
+
 from django.db import models
 from django.contrib import admin
-class Movie(models.Model):
-    mid=models.IntegerField()
-    mname=models.CharField(max_length=100)
-    collection=models.IntegerField()
-    year=models.IntegerField()
-    rating=models.FloatField()
-
-class MovieAdmin(admin.ModelAdmin):
-    list_display=('mid','mname','collection','year','rating')
+class Movie (models.Model):
+    User_id=models.IntegerField(primary_key=True)
+    User_name=models.CharField(max_length=100)
+    email=models.EmailField()
+    Movie_name=models.CharField(max_length=100)
+    No_of_seats=models.IntegerField()
+    
+ 
+class UserID(admin.ModelAdmin):
+    list_display=('User_id','User_name','email','Movie_name','No_of_seats')
 
 ```
 
@@ -53,7 +55,7 @@ class MovieAdmin(admin.ModelAdmin):
 ## OUTPUT
 
 
-![alt text](nikshi.png)
+![alt text](<Screenshot 2025-05-05 223219.png>)
 
 
 ## RESULT
